@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>Xiechuanlong's CV</title>
+<link rel="stylesheet" type="text/css" href="./css/jquery_fullpage.css">
+<link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+
+<body>
+<header class='header clearfix'>
+	<div class='logo'><img src="./img/logo.jpg" /></div>
+	<p class='title'>个人简历</p>
+</header>
+<div id="my-cv">
+	<!-- page 0ne begin -->
+	<div class="section" id="page-one">
+		<div id="home" >
+			<div id="home_head_content">
+				<img src="./img/photo.png" class="home-photo" />
+			</div>
+			<div id="home-info">
+				<p class='name'>谢传龙</p>
+				<p class='aim'>希望做一名优秀的前端工程师</p>
+				<p class='state'>状态:<span class="find-work">求职中</span></p>
+				<p class='email'>xiechuanlong_job@163.com</p>
+			</div>
+		</div>
+	</div>
+	<!-- page one end -->
+
+		<!-- page two begin -->
+	<div class="section " id="page-two">
+		<div id="about">	
+				<h1>关于我</h1>
+				<div>
+					<h2>about me</h2>
+				</div>
+				<div id="about-list-content">
+					<div class="about_list">
+						<div class="about_list_eg" id="about_en_edu">education</div>
+						<div class="about_list_cn" id="about_cn_edu">学历<p>研究生</p></div>
+					</div>
+                    <div class="about_list">
+                        <div class="about_list_eg" id="about_en_age">age</div>
+                        <div class="about_list_cn" id="about_cn_age">年龄<p>26岁</p></div>
+                    </div>
+                    <div class="about_list">
+                        <div class="about_list_eg" id="about_en_loc">location</div>
+                        <div class="about_list_cn" id="about_cn_loc">坐标<p>北京</p></div>
+                    </div>
+                    <div class="about_list">
+                        <div class="about_list_eg" id="about_en_sta">status</div>
+                        <div class="about_list_cn" id="about_cn_sta">状态<p>求职</p></div>
+                    </div>	
+				</div>
+		</div>
+	</div>
+	<!-- page two end --> 
+
+	<!-- page three begin -->
+	<div class="section " id="page-three">
+		<div id="skill">
+			<h1>专业技能</h1>
+			<div><span>HTML/HTML5</span><span>CSS/CSS3</span><span>Sass</span></div>
+			<div><span>javascript</span><span>jQuery</span><span>underscore</span></div>
+			<div><span>Backbone</span><span>React</span></div>
+			<div><span>Git</span><span>Fiddler</span></div>
+		</div>
+	</div>
+	<!-- page three end -->
+	<!-- page four begin -->
+	<div class="section">
+		<h3>第四屏</h3>
+		<p>这是最后一屏</p>
+	</div>
+	<!-- page four end -->
+</div>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery.fullpage.js"></script>
+<script>
+$(function(){
+	$('#my-cv').fullpage({
+		navigation:true,
+		navigationPosition:'right'
+	});
+});
+</script>
+</body>
+</html>

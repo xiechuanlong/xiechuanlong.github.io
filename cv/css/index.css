@@ -1,0 +1,138 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+html,body{
+	width:100%;
+	height:100%;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+.section{
+	background:url(../img/bg.jpg);
+}
+/** 
+ *  header section begin
+ */
+
+ .header{
+ 	width:100%;
+ 	height:80px;
+ 	position:fixed;
+ 	z-index:100;
+ 	background:rgba(220,220,220,0.5);
+    top:0px;
+    left:0px;
+ }
+ .header .logo{
+ 	float:left;
+ 	margin-left:30px;
+ }
+ .header .logo img{
+ 	width:80px;
+ 	height:80px;
+ 	border-radius:40px;
+ }
+ .header .title{
+ 	float: left;
+ 	font-size: 20px;
+    margin:20px 0px 0px 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+ }
+
+ /**
+  *page one style begin
+  */
+#page-one #home{
+	width:350px;
+	height:350px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-175px;
+	margin-left:-175px;
+}
+#home .home-photo{
+	width:140px;
+	height:150px;
+	border-radius:75px;
+	margin-left:100px;
+}
+#home #home-info{
+	text-align:center;
+}
+#home #home-info .name{
+	font-size:30px;
+	line-height:50px;
+}
+#home #home-info .aim{
+	font-size:20px;
+	line-height:40px;
+}
+#home #home-info .state{
+	font-size:20px;
+	line-height:40px;
+}
+#home #home-info .state .find-work{
+	font-size:25px;
+	font-weight: bold;
+	display:inline-block;
+	margin-left:5px;
+	color:#28e4ef;
+}
+#home #home-info .email{
+	font-size:15px;
+	line-height:30px;
+	color:#13eadc;
+}
+
+ /**
+  *page two style begin
+  */
+ .about{
+ 	width:1000px;
+ 	margin:0 auto;
+ 	margin-top:180px;
+ 	height:100%;
+ 	text-align:center;
+ }
+
+.about-list-content{
+	width:700px;
+	margin:40px auto;
+}
+
+
+
+ /**
+  *page three style begin
+  */
+
+  .skill{
+  	width: 330px;
+  	height:300px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-165px;
+    margin-top:-150px;
+    text-align: center;
+  }
+  .skill h1{
+  	font-size:40px;
+  	line-height:80px;
+  }
+  .skill span{
+  	display:inline-block;
+  	font-size:20px;
+  	margin-right:20px;
+  	line-height:30px;
+  }
