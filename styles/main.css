@@ -14,25 +14,129 @@ a{
 }
 
 
+#nav{
+	height:70px;
+	width:100%;
+	position:fixed;
+	top:0px;
+	text-align:center;
+	line-height: 70px;
+	font-size:40px;
+	font-family: Comic Sans MS;
+	background:#7ea9a7;
+	z-index:100;
+
+}
 #wrap{
-	position:relative;;
+	box-sizing: border-box; /**为了防止边距重叠*/
+	padding-top:70px;
+	position:relative;
 	width:100%;
 	height:100%;
 }
 
-/*#wrap #nav{
-	height:30px;
-}
-#content #sidebar{
-	width:100px;
-	height:100%;
-	position:absolute;
-}*/
+#sidebar-left{
+    width:250px;
+    height:180px;
+    background-image:url(../images/saying.png);
+    background-size:cover;
+    position:fixed;
+    top:25px;
+    left:135px;
+    z-index:110;
 
+    transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -o-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -webkit-transform-origin: 0% 0%;
+    animation: myani 3s ease 1s both;
+    -ms-animation: myani 3s ease 1s both;
+    -o-animation: myani 3s ease 1s both;
+    -moz-animation: myani 3s ease 1s both;
+    -webkit-animation: myani 3s ease 0.5s both;
+}
+
+@keyframes myani
+{
+	0%{transform:rotate(0deg);}
+	10%{transform:rotate(65deg);}
+	30%{transform: rotate(35deg)}
+	50%{transform: rotate(50deg);}
+	80%{transform:rotate(40deg);}
+	100%{transform: rotate(45deg);}
+}
+@-moz-keyframes myani
+{
+	0%{transform:rotate(0deg);}
+	10%{transform:rotate(65deg);}
+	30%{transform: rotate(35deg)}
+	50%{transform: rotate(50deg);}
+	80%{transform:rotate(40deg);}
+	100%{transform: rotate(45deg);}
+}
+@-ms-keyframes myani
+{
+	0%{transform:rotate(0deg);}
+	10%{transform:rotate(65deg);}
+	30%{transform: rotate(35deg)}
+	50%{transform: rotate(50deg);}
+	80%{transform:rotate(40deg);}
+	100%{transform: rotate(45deg);}
+}
+@-o-keyframes myani
+{
+	0%{transform:rotate(0deg);}
+	10%{transform:rotate(65deg);}
+	30%{transform: rotate(35deg)}
+	50%{transform: rotate(50deg);}
+	80%{transform:rotate(40deg);}
+	100%{transform: rotate(45deg);}
+}
+@-webkit-keyframes myani
+{
+	0%{transform:rotate(0deg);}
+	10%{transform:rotate(65deg);}
+	30%{transform: rotate(35deg)}
+	50%{transform: rotate(50deg);}
+	80%{transform:rotate(40deg);}
+	100%{transform: rotate(45deg);}
+}
+#sidebar-left p{
+    padding-top:60px;
+    padding-left:80px;
+    padding-right:10px;
+    line-height: 18px;
+    color:#fff;
+    font-size:14px;
+}
+
+#wrap #sidebar-right{
+	width:230px;
+	position:absolute;
+	right:0;
+	top:70px;
+	background:#003;
+}
+#wrap #sidebar-right #clock img{
+	width:15px;
+	height:16px;
+}
+#wrap #sidebar-right #clock img.week{
+	width:25px;
+}
+#wrap #sidebar .title{
+	text-align:center;
+	line-height: 60px;
+	font-family: STCaiyun;
+	font-weight: bold;
+	color:green;
+}
 /*主要内容部分 */
-#content #main-content{
-	margin-left:100px;
+#content{
+	margin-right:100px;
 	min-width:800px;
+	margin-top:10px;
 }
 
 #center-wrap{
@@ -44,7 +148,6 @@ a{
 	height:270px;
 	padding-top:20px;
 	margin-bottom: 20px;
-	background-color:#eeeeee;
 }
 #center-wrap #c-header .icon{
 	width:150px;
