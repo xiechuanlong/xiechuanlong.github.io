@@ -113,7 +113,7 @@ a{
 
 #wrap #sidebar-right{
 	width:230px;
-	position:absolute;
+	position:fixed;
 	right:0;
 	top:70px;
 	background:#003;
