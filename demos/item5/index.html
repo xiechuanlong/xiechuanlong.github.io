@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+	<title>导航栏</title>
+	<style type="text/css">
+	*{
+		padding:0px;
+		margin:0px;
+	}
+	body{
+		  background-color:#33ccff;
+		  font-size:20px;  
+	}
+	.wrap{
+		width:850px;
+		margin:100px auto;
+	}
+	p{
+		font-size:30px;
+		font-weight:bold;
+		text-align:center;
+		margin-bottom:30px;
+	}
+	ul{
+		list-style:none;
+	}
+	.wrap ul>li{
+		float:left;
+		width:110px;
+	}
+	li a{
+		color:#fff;
+		text-decoration:none;
+		display:block;
+		padding:10px 15px;
+		background-color:#000;
+	}
+	.wrap ul li ul:after{
+		display:block;
+		clear:both;
+		content:"";
+		visibility:hidden;
+		height:0px;
+	}
+	.wrap ul li ul{
+		zoom:1;
+	}
+	.wrap ul li ul{
+		width:90px;
+		display:none;
+	}
+	.wrap ul li:hover ul{
+		display:block;
+	}
+	.wrap ul li a:hover{
+		background-color:green;
+		color:#000;
+	}
+	</style>
+  </head>
+  <body>
+  <div class="wrap">
+		<p>HTML+CSS练习</p>
+			<ul>
+			<li><a href="test1.html">火狐FTP</a></li>
+			<li><a href="test2.html">导航条</a></li>
+			<li><a href="test3.html">布局</a></li>
+			<li><a href="#">表单</a>
+				<ul>
+					<li><a href="test4.html">表单一</a></li>
+					<li><a href="test5.html">表单二</a></li>
+				</ul>
+			</li>
+			<li><a href="test6.html">全图排版</a></li>
+			<li><a href="test7.html">图文混排</a></li>
+			<li><a href="#">表格</a>
+				<ul>
+					<li><a href="test8.html">表格一</a></li>
+					<li><a href="test9.html">表格二</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+  </body>
+</html>

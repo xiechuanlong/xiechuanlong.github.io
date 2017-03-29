@@ -1,0 +1,6 @@
+遇到的问题
+	1.怎样去除chrome下的input的默认边框
+				*:focus{
+     					outline:none;
+				}
+	2.inline元素display设置为inline-block时好使，block元素设置为inline-block时IE6/7不支持

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery测试</title>
+<script src="./js/jquery.min.js"></script>
+<script>
+	//位置1 测试
+	var test1 = $(".test").text();
+	console.log("位置1：" + test1);
+	//位置2 测试
+	$(function(){
+		var test2 = $(".test").text();
+		console.log("位置2：" + test2);
+	});
+</script>
+</head>
+<body>
+	<div class="test">页面内容</div>
+	<script>
+		//位置3 测试
+		var test3 = $(".test").text();
+		console.log("位置3：" + test3);
+	</script>
+</body>
+</html>

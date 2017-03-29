@@ -1,0 +1,45 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    font-size:12px;
+    background-color:#f7f7f7;
+}
+.all_bg{
+    width:800px;
+    height:600px;
+    margin:10px auto;
+}
+#canvas{
+    width:800px;
+    height:600px;
+    position:relative;
+}
+#canvas1{
+    width:800px;
+    height:600px;
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:1;
+}
+#canvas2{
+    width:800px;
+    height:600px;
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:0;
+}
+#btn{
+    font-size:30px;
+    font-weight: bold;
+    color:#fff;
+    position:absolute;
+    z-index:3;
+    top:230px;
+    left:320px;
+    cursor: default;
+    display:none;
+}

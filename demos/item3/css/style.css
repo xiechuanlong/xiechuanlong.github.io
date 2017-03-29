@@ -1,0 +1,71 @@
+body{margin:0;padding:0;color:#333;font-family:'Microsoft YaHei';}
+body{background:url(../images/bg.jpg) no-repeat fixed left top;}
+img{border:0;}
+a{text-decoration:none;color:#333;}
+a:hover{text-decoration:underline;}
+.box{width:920px;margin:0 auto;}
+.header{background:#fff;box-shadow:0 1px 1px rgba(0,0,0,0.15);}
+.header-info{border-bottom:1px solid #f2f2f5;margin-top:120px;}
+.header-avatar{padding:2px;background:#fff;float:left;font-size:0;box-shadow:0 2px 4px rgba(0,0,0,0.3);position:relative;top:-60px;left:20px;}
+.header-avatar img{width:120px;height:120px;}
+.header-wrap{padding:10px 0 10px 160px;}
+.header-user{font-size:22px;}
+.header-opt{background:url(../images/opt.png) no-repeat;height:45px;width:179px;}
+.header-nav{text-indent:20px;}
+.header-nav a{display:inline-block;text-indent:0;text-align:center;vertical-align:bottom;height:40px;line-height:40px;font-size:14px;margin:0 40px;padding:0 6px;border-bottom:2px solid #fff;}
+.header-nav a:hover{text-decoration:none;border-bottom:2px solid #f7691d;transition:all .2s linear;}
+.header-nav a.curr{font-weight:bold;border-bottom:2px solid #f7691d;}
+
+/*首页*/
+.main{overflow:hidden;margin-top:13px;}
+.main-content{width:600px;float:left;}
+.main-content-each{border-radius:4px;padding:10px 0;background:#fff;text-align:center;margin-bottom:20px;}
+.main-side{float:right;background:url(../images/side.png);width:304px;height:456px;}
+.img02{background:url(../images/img02.png) #fff no-repeat bottom;height:70px;padding-top:20px;}
+.main-content .button{margin-left:12px;cursor:pointer;background:#fff;border:1px solid #ccc;padding:3px 14px;font-family:'Microsoft YaHei';color:#333;border-radius:2px;box-shadow:1px 1px 1px #dfdfdf;font-size:13px;}
+
+/*弹出层*/
+.layer{font-family:'simsun';font-size:13px;display:none;}
+.layer-mask{background:rgba(0,0,0,0.3);position:fixed;top:0;left:0;bottom:0;right:0;}
+.layer-wrap{background:rgba(0,0,0,0.1);border-radius:8px;position:fixed;top:50%;left:50%;}
+.layer-box{background:#fff;margin:8px;}
+.layer-close{float:right;position:absolute;top:18px;right:18px;width:20px;height:20px;line-height:23px;border-radius:4px;text-align:center;cursor:pointer;background:#aaa;color:#fff;font-weight:bold;}
+.layer-close:hover{background:#11ABD9;}
+.layer-title{font-size:14px;width:100%;font-weight:700;color:#369;padding-top:10px;padding-left:10px;}
+
+/*弹出层中的登录*/
+.login{border-collapse:collapse;width:300px;line-height:33px;border:15px solid #fff;}
+.login tr{border-bottom:1px dotted #ccc;margin:0 10px;}
+.login tr:last-Child{border-bottom:0;}
+.login th{font-weight:normal;text-align:right;}
+.login input[type=text]{border:1px solid #ccc;padding:3px;color:#333;}
+.login input[type=password]{border:1px solid #ccc;padding:3px;color:#333;}
+.login .button{padding:3px 6px;cursor:pointer;margin-top:5px;line-height:16px;}
+
+/*相册*/
+.album{margin-top:13px;margin-bottom:30px;background:#fff;border-radius:4px;padding:30px;}
+.album .list{overflow:hidden;}
+.album .imgbox{width:180px;text-align:center;border:1px dotted #ccc;padding:5px;float:left;margin:4px;}
+.album .imgbox img{width:150px;height:150px;}
+.album input[type=text]{padding:4px;border:1px solid #ccc;width:300px;}
+.album .act{line-height:32px;}
+.album .act-add{padding:3px 22px;cursor:pointer;line-height:20px;}
+.album .imgbox button{cursor:pointer;margin:0 2px;}
+
+/*焦点图切换*/
+
+.hot{width:874px;margin:13px auto 30px auto;background:#fff;border-radius:4px;background:#fff;padding:3px;position:relative;}
+.hot-pics{height:382px;overflow:hidden;position:relative;font-size:0;}
+.hot-pics ul{list-style:none;margin:0;padding:0;position:absolute;top:0;}
+.hot-bar{position:absolute;bottom:2px;height:30px;width:874px;background:rgba(0,0,0,0.3);}
+.hot-bar ul{font-size:0;text-align:center;padding:0;margin:0;margin-top:6px;}
+.hot-bar li{width:14px;height:14px;background:#fff;display:inline-block;margin:0 5px;border-radius:7px;cursor:pointer;}
+.hot-bar li.current{background:#D968C0;}
+
+/*瀑布流*/
+.water{margin:0 auto;overflow:hidden;}
+.water-flow{float:left;}
+.water-each{font-size:0;border:10px solid #fff;box-shadow:0px 1px 2px 1px #ddd;margin:6px 3px;display:none;}
+.water-each:hover{box-shadow:0px 1px 2px 1px #bbb;}
+.water-flow img{width:100%;}
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery个人主页</title>
+<link rel="stylesheet" href="./css/style.css" />
+<script src="./js/jquery.min.js"></script>
+</head>
+<body>
+<div class="box">
+	<div class="header">
+		<div class="header-info">
+			<div class="header-avatar"><img src="./images/avatar.jpg" /></div>
+			<div class="header-wrap">
+				<div class="header-user">1024程序员</div>
+				<div class="header-opt"></div>
+			</div>
+		</div>
+		<div class="header-nav">
+			<a href="./index.html" class="curr">我的主页</a><a href="./hot.html">热点放送</a><a href="./album.html">随心贴图</a><a href="./waterfall.html">图片墙</a>
+		</div>
+	</div>
+	<div class="main">
+		<div class="main-content">
+			<div class="main-content-each img02">欢迎来到我的个人主页！<button class="button" id="layer">登录</button></div>
+			<div class="main-content-each"><img src="./images/img01.jpg" /></div>
+		</div>
+		<div class="main-side"></div>
+	</div>
+</div>
+<div class="layer">
+	<div class="layer-mask"></div>
+	<div class="layer-wrap">
+		<div class="layer-box">
+			<div class="layer-title">欢迎登录</div>
+			<div class="layer-close">×</div>
+			<table class="login">
+			<tr><th>用户名：</th><td><input type="text" /></td></tr>
+			<tr><th>密码：</th><td><input type="password" /></td></tr>
+			<tr><th></th><td><button class="button">登录</button></td></tr>
+			</table>
+		</div>
+	</div>
+</div>
+<script>
+	
+function layer(){
+	var speed = 200; //淡入淡出动画速度
+	var $layer = $(".layer");
+	var $wrap = $layer.find(".layer-wrap");
+	var $close = $layer.find(".layer-close");
+	
+	//以淡入效果显示弹出层
+	$layer.fadeIn(speed);
+	
+	//控制弹出层显示的位置为网页中心
+	$wrap.css("margin-left","-"+($wrap.width()/2)+"px");
+	$wrap.css("margin-top","-"+($wrap.height()/2)+"px");
+	
+	//关闭按钮，以淡出效果隐藏弹出层
+	$close.click(function(){
+		$layer.fadeOut(speed);
+	});
+}
+
+//点击按钮时显示弹出层
+$("#layer").click(layer);
+
+</script>
+</body>
+</html>

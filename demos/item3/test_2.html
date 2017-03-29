@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery测试</title>
+<script src="./js/jquery.min.js"></script>
+</head>
+<body>
+	<div class="top">页面头部</div>
+	<div class="main">页面中部</div>
+	<div class="footer">页面尾部</div>
+	<script>
+		$(function(){
+			//通过修改CSS使文本居中
+			$(".top").css("text-align","center");
+			//通过修改CSS使文本加粗
+			$(".main").css("font-weight","bold");
+			//通过修改CSS添加背景色
+			$(".footer").css("background","#ccc");
+		});
+	</script>
+</body>
+</html>
