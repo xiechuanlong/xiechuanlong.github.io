@@ -43,7 +43,7 @@ a{
 	display:inline-block;
 	background:#726b6b;
 	text-align: left;
-	padding-left:20px;
+	padding:8px 0px 8px 20px;
 	color:#fff;
 	border:1px solid gray;
 	cursor: point;
