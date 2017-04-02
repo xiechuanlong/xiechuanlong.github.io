@@ -4,7 +4,6 @@ var index={
 	},
 	_clock:function(){//clock相关
 		var self=this;
-		var eWeek=["one","two","three","four","five","six","seven"];//与getDay()得到的数字相对应，并运用与改变img的src.
 		var timer=null;
 		var oImages=[];
 	    var oImg=$("#clock img");
@@ -19,7 +18,6 @@ var index={
 	    /* 返回一个数组形式的时间*/
 		function getTimeArray(){
 	        var aChar=[];
-	        var aNumber=[];
 	        var date=new Date();
 	        var year=date.getFullYear();
 	        var month=date.getMonth();
@@ -28,25 +26,20 @@ var index={
 	        var minute=date.getMinutes();
 	        var second=date.getSeconds();
 	        var week=date.getDay();
-	        if(week==0){
-	            week=7;
-	        }
-	        var str=""+year+this._toDouble(month+1)+day+this._toDouble(hour)+this._toDouble(minute)+this._toDouble(second)+week;
-	        aChar=str.split("");
-	        for(var i=0;i<aChar.length;i++){
-	            aNumber[i]=parseInt(aChar[i]);
-	        }
-	        return aNumber;
+	        var str=""+year+this._toDouble(month+1)+this._toDouble(day)+this._toDouble(hour)+this._toDouble(minute)+this._toDouble(second)+week;
+          aChar=str.split("");
+        return aChar;
 	    }
 	    /*时间更新并显示*/
 	    function showTime(){
+					var eWeek=["seven","one","two","three","four","five","six"];//与getDay()得到的数字相对应，并运用与改变img的src.
 	        var clockNumberArray= getTimeArray.apply(index);
 	        for(i=0;i<oImages.length;i++) {
 	            if(i<oImages.length-1){
 	                oImages[i].src = "images/" +clockNumberArray[i] + ".png";
 	            }
 	            else{
-	                oImages[i].src="images/"+eWeek[clockNumberArray[i]-1]+".png";
+	                oImages[i].src="images/"+eWeek[parseInt(clockNumberArray[i])]+".png";
 	            }
 
 	        }
