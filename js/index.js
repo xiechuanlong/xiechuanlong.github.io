@@ -1,6 +1,7 @@
 var index={
 	init:function(){
 		this._clock();
+		this._remind();
 	},
 	_clock:function(){//clock相关
 		var self=this;
@@ -52,12 +53,14 @@ var index={
         else {
             return "" + a;
         }
+    },
+    _remind:function(){
+    	$('.item-build').bind('click',function(){
+    		alert('正在建设中');
+    	})
     }
 }
 
-var clock={
-	
-}
 
 
 
