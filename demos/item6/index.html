@@ -1,13 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>todo MVC</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="./css/main.css">
-</head>
-	<div id="todo-app"></div>
-<body>
-<script type="text/javascript" src="./js/localDB.js"></script>
-<script type="text/javascript" src="./build/index.js"></script>
-</body>
+<!doctype html>
+<html lang="en" >
+	<head>
+		<meta charset="utf-8">
+		<title>jQuery • TodoMVC</title>
+		<link rel="stylesheet" type="text/css" href="./style/index.css">
+		<script type="text/javascript" src="./js/jquery-2.1.1.js"></script>
+		<script type="text/javascript" src="./js/todo.js"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<h1>Todos</h1>
+			<div class="todo">
+				<div class="todo-add">
+					<input id="todo-all-select" type="checkbox" style="display:none"/>
+					 <input id="todo-content" type="text" placeholder="What needs to be done?" autofocus/>
+				</div>
+				<div class="todo-list" >
+					<ul>
+						<li class="todo-items" style="display:none">
+							<input id="todo-select" type="checkbox" />
+							<p>todo model</p>
+							<img src="./images/delete.jpg" alt="" >
+						</li>	
+					</ul>
+				</div>
+				<div class="todo-control" style="display:none">
+					<strong class="active-number">1</strong> items left <span class="all current">All</span> <span class="active">Active</span> 	<span class="completed">completed</span> <span class="clear-completed" style="display:none">Clear completed</span> 
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

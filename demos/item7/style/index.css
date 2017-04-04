@@ -1,0 +1,116 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+ul,li{
+	list-style:none;
+}
+input{
+	border:0px;
+	outline: none;
+}
+*:focue{
+	outline:none;
+}
+input{
+	border:0;
+}
+body{
+	background-color: #f5f5f5;
+}
+/*todo样式***/
+.wrap{
+	width:550px;
+	margin:50px auto;
+}
+.wrap h1{
+	font-size:40px;
+	text-align:center;
+}
+#todo{
+	border:1px solid #e4e4e4;
+	background-color:#fff;
+}
+#todo-add{
+	height:30px;
+	border-bottom:1px solid #e4e4e4;
+	padding:18px 0px 18px 15px;
+}
+#todo-add #new-todo{
+	width:478px;
+	height:30px;
+	font-size:20px;
+	margin-left:35px;
+	border:0;
+}
+#todo-list li{
+	font-size:20px;
+	border-bottom:1px solid #e4e4e4;
+	padding:18px 0px 18px 15px;
+	position:relative;
+}
+.todo-item .toggle{
+	position:absolute;
+	top:43%;
+}  
+.todo-item img{
+	position:absolute;
+	top:30%;
+	right:20px;
+}           
+.todo-item p{
+	display:inline-block;
+	width:420px;
+	font-size:18px;
+	margin-left:35px;
+	margin-right:25px;
+	word-break:break-all;
+}
+.todo-item .edit{
+	display:inline-block;
+	width:430px;
+	height:30px;
+	border:1px solid #e4e4e4;
+	font-size:20px;
+	margin-left:35px;
+	margin-right:25px;
+}
+.todo-item img{
+	display:none;
+}
+
+
+
+/*footer部分样式***/
+.footer{
+	height:20px;
+	font-size:14px;
+	padding:10px;
+	color:#818382;
+	position:relative;
+}
+.footer span{
+	position:absolute;
+	cursor:pointer;
+	padding:3px;
+}
+.footer .all{
+	left:180px;
+}
+.footer .active{
+	left:230px;
+}
+.footer .completed{
+	left:290px;
+}
+.footer .clear-completed{
+	right:20px;
+}
+
+
+
+
+/*jQuery控制样式***/
+.current{
+	border:1px solid #d4d4d4;
+}

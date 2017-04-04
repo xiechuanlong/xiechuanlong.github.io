@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" >
+	<head>
+		<meta charset="utf-8">
+		<title>Backbone • TodoMVC</title>
+		<link rel="stylesheet" type="text/css" href="./style/index.css" />
+	</head>
+	<body>
+		<div class="wrap">
+			<h1>Todos</h1>
+			<div id="todo">
+				<div id="todo-add"></div>
+				<ul id="todo-list"></ul>
+				<div id="todo-footer"></div>
+			</div>
+		</div>
+		<!-- todo-add部分模板 -->
+		<script type="text/template" id="todo-add-template">
+			<input id="toggle-all" type="checkbox" <%= totle===0?"style='display:none'":"inline-block"%> <%= completedAll?"checked":""%>/>
+			<input id="new-todo" type="text" placeholder="What needs to be done?" autofocus />
+		</script>
+		<!-- todo-item部分模板 -->
+		<script type="text/template" id="todo-item-template">
+			<% _.each(list,function(item,index){ %>
+				<li class="todo-item">
+					<input class="toggle" type="checkbox" <%= item.edit?"style='display:none'":"style='display:inline-block'" %>  <%= item.completed?"checked":""%> />
+					<% if(!item.edit){%>
+						<p <%= item.completed?"style='color:#c4c4c4;text-decoration:line-through'":"style='color:black;text-decoration:none'"%>><%= item.title %></p>
+					<% }else{ %>
+						<input class="edit" type="text" value=<%= item.title %> autofocus>
+					<% } %>
+					<img src="./images/delete.jpg" alt="" class="destory" style="display:none">
+				</li>
+			<% }) %>	
+		</script>
+		<!-- footer部分模板 -->
+		<script type="text/template" id="footer-template">
+		 <div class="footer" <%= totle===0?"style='display:none'":"inline-block"%> >
+			<strong class="active-number"><%= remainItem %></strong> <%= remainItem===1?"item":"items" %> left <span class="all current">All</span> <span class="active">Active</span> 	<span class="completed">completed</span> <% if(completedItem) { %><span class="clear-completed">Clear completed</span><% } %>
+			</div>
+		</script>
+				<script type="text/javascript" src="./js/jquery.js"></script>
+		<script type="text/javascript" src="./js/lodash.js"></script>
+		<script type="text/javascript" src="./js/backbone.js"></script>
+		<script type="text/javascript" src="./js/index.js"></script>
+	</body>
+</html>
